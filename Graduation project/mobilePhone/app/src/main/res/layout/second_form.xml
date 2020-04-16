@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondActivity">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2">
+        <ImageButton
+            android:layout_width="116dp"
+            android:layout_height="160dp"
+            android:background="#00000000"
+            android:id="@+id/light_button"
+            android:src="@drawable/light"
+            android:scaleType="centerInside"
+            android:onClick="lightButtonClick"
+
+            />
+        <ImageButton
+            android:layout_width="116dp"
+            android:layout_height="160dp"
+            android:background="#00000000"
+            android:id="@+id/heater_button"
+            android:src="@drawable/heater"
+            android:onClick="heaterButtonClick"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/airCondition_button"
+            android:layout_width="116dp"
+            android:layout_height="160dp"
+            android:background="#00000000"
+            android:onClick="airConditionButtonClick"
+            android:src="@drawable/aircondition"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageButton
+            android:layout_width="116dp"
+            android:layout_height="160dp"
+            android:background="#00000000"
+            android:id="@+id/kettle_button"
+            android:src="@drawable/kettle"
+            android:scaleType="fitXY"
+            android:onClick="kettleButtonClick"
+            />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
